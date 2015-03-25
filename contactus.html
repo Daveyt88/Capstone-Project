@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="contact_style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="contact_form.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+    <title>Contact Us</title>
+</head>
+
+<body>
+<div id="page">
+    <form id="search" method="get" action="http://capstoneproject1.netau.net/">
+        <table cellpadding="0px" cellspacing="0px">
+            <tr>
+                <a href='http://capstone1.host22.com/Capstone/login.php'><font color="white">Login/Register</font></a>
+            </tr>
+        </table>
+    </form>
+    <div id="header">
+        <h1>Team Project #1</h1>
+    </div>
+    <div class="logo2">
+        <img src="images/logo.png" alt="logo" width="110" height="80"></a>
+    </div>
+
+    <div id="bar">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="aboutus.html">About Us</a></div>
+        <div class="link"><a href="registration.php">Registration</a></div>
+        <div class="link"><a href="directory.php">Directory</a></div>
+        <div class="link"><a href="faqs.html">FAQs</a></div>
+        <div class="link"><a href="contactus.html">Contact Us</a></div>
+    </div>
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="buttonwrapper">
+        <input type="button" class="btn" value="Click here to schedule an appointment"
+               onClick="window.location.href='appointment.html'">
+    </div>
+    <div class="container">
+        <div class="column-leftreg">
+            <div class="contentTitle">
+                </tbody></table>
+                <br>
+
+                <p>We look forward to assisting you.</p>
+                </br>
+                <br>
+
+                <h3>Office Location</h3>
+
+                <p>Department<br>
+                    Gallaudet University<br>
+                    P.O. Box 69696<br>
+                    800 Florida Ave NE<br>
+                    Washington, DC 20002-1281</p>
+                </br>
+                <h3>Phone</h3>
+
+                <p>Phone: 987-281-0125<br>
+                    Cell: 123-990-5726</p>
+                </br>
+                <h3>Email</h3>
+
+                <p>name@university.com </p>
+            </div>
+        </div>
+    </div>
+    <div class="column-rightreg">
+        <div class="contentTitle">
+            <form name="contact" method="post" action="send_form_email.php">
+                <fieldset id="contactinfo2">
+                    <legend><span>Contact Information</span></legend>
+                    <label for="nameinput">
+                        <span class="req">*</span>First Name:
+                        <input type="text" id="nameinput" name="fname" pattern="[a-zA-Z]+"
+                       title="Please enter only alphabets" placeholder="First name" maxlength="35" required/>
+                    </label>
+                    <label for="nameinput">
+                        <span class="req">*</span>Last Name:
+                        <input type="text" id="nameinput" name="lname" pattern="[a-zA-Z]+"
+                       title="Please enter only alphabets" placeholder="Last name" maxlength="35" required/>
+                    </label>
+                    <label for="emailinput">
+                        <span class="req">*</span>E-mail:
+                        <input type="email" id="emailinput" name="email" placeholder="address@example.com" required/>
+                    </label>
+                    <label for="phoneinput">
+                        Voice/SMS Phone #:
+                        <input type="text" id="phoneinput" name="phone" placeholder="999-999-9999"
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"/>
+                    </label>
+
+                    <p id="instructions"><span class="req">*</span>Required</p>
+                </fieldset>
+                <fieldset id="contactinfo2">
+                    <legend><span>Message</span></legend>
+                    <label>
+                        <textarea name="comments" rows="4" cols="55" required></textarea>
+                    </label>
+                </fieldset>
+                <fieldset id="buttons" style="border: none; text-align: center;margin-left: -150;width: 455px;">
+                    <input type="submit" name="submit" value="Send"/>
+                    <input type="reset" id="reset" value="Reset Fields"/>
+                    <a href="http://capstone1.host22.com/Capstone/index.html"><input type="button"
+                                                                                     value="Back to homepage"/></a><br>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </article>
+    <div class="contentBorder">
+        _________________________________________________________________________________________________
+        <ul id="socialbar">
+            <li id="facebook"><a target="_blank" href="http://www.facebook.com/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/facebook.png"></a></li>
+            <li id="twitter"><a target="_blank" href="http://twitter.com/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/twitter.png"></a></li>
+            <li id="Googleplus"><a target="_blank" href="https://plus.google.com/u/0/profilepageaddress"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/Googleplus.png"></a></li>
+            <li id="Reddit"><a target="_blank" href="http://reddit.com/user/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/Reddit.png"></a></li>
+            <li id="youtube"><a target="_blank" href="http://youtube.com/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/youtube.png"></a></li>
+        </ul>
+        <style>#socialbar img {
+            border: 0px;
+        }
+
+        #socialbar li img {
+            width: 24px;
+            height: 24px;
+        }
+
+        #socialbar li a:hover {
+            position: relative;
+            top: 2px;
+        }
+
+        #socialbar {
+            padding: 0px;
+            list-style: none outside none;
+            margin: 0px;
+            position: static;
+        }
+
+        #socialbar li {
+            display: inline;
+            padding-right: 2px;
+        }
+
+        #socialbar {
+            width: 180px;
+            text-align: center;
+        }</style>
+    </div>
+</div>
+<div id="footer"><a
+        href="https://www.google.com/maps/place/Gallaudet+University/@38.908422,-76.992387,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b813d927bac3:0x7f033ffc2f87381d">Find
+    us</a>,
+    Team Project; David Torrance, Luis Figueroa Montanez &#38 Aspen Friend &#169 Copyright 2014
+</div>
+</body>
+</html>

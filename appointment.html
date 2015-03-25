@@ -1,0 +1,152 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+    <title>Appointment</title>
+</head>
+
+<body>
+<div id="page">
+    <form id="search" method="get" action="http://capstoneproject1.netau.net/">
+        <table cellpadding="0px" cellspacing="0px">
+            <tr>
+                <a href='http://capstone1.host22.com/Capstone/login.php'><font color="white">Login/Register</font></a>
+            </tr>
+        </table>
+    </form>
+    <div id="header">
+        <h1>Team Project #1</h1>
+    </div>
+    <div class="logo2">
+        <img src="images/logo.png" alt="logo" width="110" height="80"></a>
+    </div>
+
+    <div id="bar">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="aboutus.html">About Us</a></div>
+        <div class="link"><a href="registration.php">Registration</a></div>
+        <div class="link"><a href="directory.php">Directory</a></div>
+        <div class="link"><a href="faqs.html">FAQs</a></div>
+        <div class="link"><a href="contactus.html">Contact Us</a></div>
+    </div>
+
+    <div class="header">
+        <h1>Appointment</h1>
+    </div>
+    <div class="container">
+        <form name="contact" method="post" action="send_form_appt.php">
+            <fieldset id="appointmentform">
+                <legend><span>Make an appointment here</span></legend>
+                <label>
+              <span class="appt">ID<br/>University:
+                <input type="text" name="id" id="inputreg" pattern="\d*" maxlength="7"
+                       title="Please fill out your University ID with only numbers" placeholder="01234567"/>
+                </label>
+                <label>
+                    <span class="appt">*</span>First name:
+                    <input type="text" id="inputreg" name="fname" pattern="[a-zA-Z]+"
+                           title="Please enter only alphabets"
+                           placeholder="First name" maxlength="35" required/>
+                </label>
+                <label>
+                    <span class="appt">*</span>Last name:
+                    <input type="text" id="inputreg" name="lname" pattern="[a-zA-Z]+"
+                           title="Please enter only alphabets"
+                           placeholder="Last name" maxlength="35" required/>
+                </label>
+                <label>
+                    <span class="appt">*</span>Select person you want to meet:<br>
+                    <select name='names' style="margin-left: 100px;" required/>
+                    <option value="">--- Select ---</option>
+                    <option value="Irene Tseng">Irene Tseng</option>
+                    <option value="Karen Alkoby">Karen Alkoby</option>
+                    <option value="Qi Wang">Qi Wang</option>
+                    <option value="Shannon Augustine">Shannon Augustine</option>
+                    <option value="Jonathan Chanin">Jonathan Chanin</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="appt">*</span>E-mail:
+                    <input type="email" id="inputappt" name="email" placeholder="address@example.com" required/>
+                </label>
+                <label>
+                    <span class="appt">*</span>Date:
+                    <input type="date" id="inputappt" name="appt_date" required/>
+                </label>
+                <label>
+                    <span class="appt">*</span>Time:
+                    <input type="time" id="inputappt" name="appt_time" required/>
+                </label>
+                <label>
+                    <span class="appt">*</span>Reason:<br>
+                    <textarea name="reason" rows="10" cols="50" placeholder="Message" required></textarea>
+                </label>
+
+                <p id="instructions"><span class="appt">*</span>Required</p>
+            </fieldset>
+            <fieldset id="buttons" style="border: none; text-align: center;">
+                <input type="submit" name="submit" value="Send"/>
+                <input type="reset" id="reset" value="Reset Fields"/>
+                <a href="http://capstone1.host22.com/Capstone/contactus.html"><input type="button"
+                                                                                     value="Back to contact us page"/></a>
+                <a href="http://capstone1.host22.com/Capstone/index.html"><input type="button"
+                                                                                 value="Back to homepage"/></a><br>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="contentBorder">
+        _________________________________________________________________________________________________
+        <ul id="socialbar">
+            <li id="facebook"><a target="_blank" href="http://www.facebook.com/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/facebook.png"></a></li>
+            <li id="twitter"><a target="_blank" href="http://twitter.com/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/twitter.png"></a></li>
+            <li id="Googleplus"><a target="_blank" href="https://plus.google.com/u/0/profilepageaddress"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/Googleplus.png"></a></li>
+            <li id="Reddit"><a target="_blank" href="http://reddit.com/user/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/Reddit.png"></a></li>
+            <li id="youtube"><a target="_blank" href="http://youtube.com/username"><IMG
+                    src="http://www.topproducerwebsite.com/images/site_defaults/generic/youtube.png"></a></li>
+        </ul>
+        <style>#socialbar img {
+            border: 0px;
+        }
+
+        #socialbar li img {
+            width: 24px;
+            height: 24px;
+        }
+
+        #socialbar li a:hover {
+            position: relative;
+            top: 2px;
+        }
+
+        #socialbar {
+            padding: 0px;
+            list-style: none outside none;
+            margin: 0px;
+            position: static;
+        }
+
+        #socialbar li {
+            display: inline;
+            padding-right: 2px;
+        }
+
+        #socialbar {
+            width: 180px;
+            text-align: center;
+        }</style>
+    </div>
+</div>
+<div id="footer"><a
+        href="https://www.google.com/maps/place/Gallaudet+University/@38.908422,-76.992387,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b813d927bac3:0x7f033ffc2f87381d">Find
+    us</a>,
+    Team Project; David Torrance, Luis Figueroa Montanez &#38 Aspen Friend &#169 Copyright 2014
+</div>
+</body>
+</html>
